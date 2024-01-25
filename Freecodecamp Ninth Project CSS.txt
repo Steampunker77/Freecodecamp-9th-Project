@@ -1,0 +1,186 @@
+1  @media (prefers-reduced-motion: no-preference) {
+2    * {
+3    scroll-behavior: smooth;
+4  }
+5 }
+6
+7 body {
+8   background: #f5f6f7;
+9   color: #1b1b32;
+10  font-family: Helvetica;
+11  margin: 0;
+12 }
+13
+14 header {
+15   width: 100%;
+16   height: 50px;
+17   background-color: #1b1b32;
+18   display: flex;
+19   justify-content: space-between;
+20   align-items: center;
+21   position: fixed;
+22   top: 0;
+23 }
+24
+25 #logo {
+26   width: max(100px, 18vw);
+27   background-color: #0a0a23;
+28   aspect-ratio: 35 / 4;
+29   padding: 0.4rem;
+30 }
+31
+32 h1 {
+33   color: #f1be32;
+34   font-size: min(5vw, 1.2em);
+35   text-align: center;
+36 }
+37
+38 nav {
+39   width: 50%;
+40   max-width: 300px;
+41   height: 50px;
+42 }
+43
+44 nav > ul {
+45   display: flex;
+46   justify-content: space-evenly;
+47   flex-wrap: wrap;
+48   align-items: center;
+49   padding-inline-start: 0;
+50   margin-block: 0;
+51   height: 100%;
+52 }
+53
+54 nav > ul > li {
+55   color: #dfdfe2;
+56   margin: 0 0.2rem;
+57   padding: 0.2rem;
+58   display: block;
+59 }
+60
+61 nav > ul > li:hover {
+62   background-color: #dfdfe2;
+63   color: #1b1b32;
+64   cursor: pointer;
+65 }
+66
+67 li > a {
+68   color: inherit;
+69   text-decoration: none;
+70 }
+71
+72 main {
+73   padding-top: 50px;
+74 }
+75
+76 section {
+77   width: 80%;
+78   margin: 0 auto 10px auto;
+79   max-width: 600px;
+80 }
+81
+82 h1,
+83 h2 {
+84   font-family: Verdana, Tahoma;
+85 }
+86
+87 h2 {
+88   border-bottom: 4px solid #dfdfe2;
+89   margin-top: 0px;
+90   padding-top: 60px;
+91 }
+92
+93 .info {
+94   padding: 10px 0 0 5px;
+95 }
+96
+97 .formrow {
+98   margin-top: 30px;
+99   padding: 0px 15px;
+100 }
+101
+102 input {
+103   font-size: 16px;
+104 }
+105
+106 .info label, .info input {
+107   display: inline-block;
+108 }
+109
+110 .info input {
+111   width: 50%;
+112   text-align: left;
+113 }
+114
+115 .info label {
+116   width: 10%;
+117   min-width: 55px;
+118   text-align: right;
+119 }
+120
+121 .question-block {
+122  text-align: left;
+123  display: block;
+124  width: 100%;
+125  margin-top: 20px;
+126  padding-top: 5px;
+127 }
+128
+129 p {
+130   margin-top: 5px;
+131   padding-left: 15px;
+132   font-size: 20px;
+133 }
+134
+135 p::before {
+136   content: "Question #";
+137 }
+138
+139 .question {
+140   border: none;
+141   padding-bottom: 0;
+142 }
+143
+144 .answers-list {
+145   list-style: none;
+146   padding: 0;
+147 }
+148
+149 button {
+150   display: block;
+151   margin: 40px auto;
+152   width: 40%;
+153   padding: 15px;
+154   font-size: 23px;
+155   background: #d0d0d5;
+156   border: 3px solid #3b3b4f;
+157 }
+158
+159 footer {
+160   background-color: #2a2a40;
+161   display: flex;
+162   justify-content: center;
+163 }
+164
+165 footer,
+166 footer a {
+167   color: #dfdfe2;
+168 }
+169
+170 address {
+171   text-align: center;
+172   padding: 0.3em;
+173 }
+174
+175 .sr-only {
+176  position: absolute;
+177  width: 1px;
+178  height: 1px;
+179  padding: 0;
+180  margin: -1px;
+181  overflow: hidden;
+182  clip: rect(0, 0, 0, 0);
+183  white-space: nowrap;
+184  border: 0;
+185 }
+186

@@ -1,0 +1,121 @@
+1 <!DOCTYPE html>
+2 <html lang="en">
+3   <head>
+4     <meta charset="UTF-8" />
+5     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+6     <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+7     <title>Accessibility Quiz</title>
+8     <link rel="stylesheet" href="styles.css" />
+9   </head>
+10    <body>
+11    <header>
+12      <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+13      <h1>HTML/CSS Quiz</h1>
+14      <nav>
+15        <ul>
+16          <li><a href="#student-info" accesskey="i" >INFO</a></li>
+17          <li><a href="#html-questions" accesskey="h" >HTML</a></li>
+18          <li><a href="#css-questions" accesskey="c" >CSS</a></li>
+19        </ul>
+20      </nav>
+21    </header>
+22    <main>
+23      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+24        <section role="region" aria-labelledby="student-info">
+25          <h2 id="student-info">Student Info</h2>
+26          <div class="info">
+27            <label for="student-name">Name:</label>
+28            <input type="text" name="student-name" id="student-name" />
+29          </div>
+30          <div class="info">
+31            <label for="student-email">Email:</label>
+32            <input type="email" name="student-email" id="student-email" />
+33          </div>
+34          <div class="info">
+35            <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+36            <input type="date" name="birth-date" id="birth-date" />
+37          </div>
+38        </section>
+39        <section role="region" aria-labelledby="html-questions">
+40          <h2 id="html-questions">HTML</h2>
+41          <div class="question-block">
+42            <p>1</p>
+43            <fieldset class="question" name="html-question-one">
+44              <legend>
+45                The legend element represents a caption for the content of its
+46                parent fieldset element
+47              </legend>
+48              <ul class="answers-list">
+49                <li>
+50                  <label for="q1-a1">
+51                    <input type="radio" id="q1-a1" name="q1" value="true" />
+52                    True
+53                  </label>
+54                </li>
+55                <li>
+56                  <label for="q1-a2">
+57                    <input type="radio" id="q1-a2" name="q1" value="false" />
+58                    False
+59                  </label>
+60                </li>
+61              </ul>
+62            </fieldset>
+63          </div>
+64          <div class="question-block">
+65            <p>2</p>
+66            <fieldset class="question" name="html-question-two">
+67              <legend>
+68                A label element nesting an input element is required to have a
+69                for attribute with the same value as the input's id
+70              </legend>
+71              <ul class="answers-list">
+72                <li>
+73                  <label for="q2-a1">
+74                    <input type="radio" id="q2-a1" name="q2" value="true" />
+75                    True
+76                  </label>
+77                </li>
+78                <li>
+79                  <label for="q2-a2">
+80                    <input type="radio" id="q2-a2" name="q2" value="false" />
+81                    False
+82                  </label>
+83                </li>
+84              </ul>
+85            </fieldset>
+86          </div>
+87        </section>
+88        <section role="region" aria-labelledby="css-questions">
+89          <h2 id="css-questions">CSS</h2>
+90          <div class="formrow">
+91            <div class="question-block">
+92              <label for="customer">Are you a frontend developer?</label>
+93            </div>
+94            <div class="answer">
+95              <select name="customer" id="customer" required>
+96                <option value="">Select an option</option>
+97                <option value="yes">Yes</option>
+98                <option value="no">No</option>
+99              </select>
+100            </div>
+101            <div class="question-block">
+102              <label for="css-textarea">Do you have any questions:</label>
+103            </div>
+104            <div class="answer">
+105              <textarea id="css-textarea" name="css-questions" rows="5" cols="24" placeholder="Who is flexbox..."></textarea>
+106            </div>
+107          </div>
+108        </section>
+109        <button type="submit">Send</button>
+110      </form>
+111    </main>
+112    <footer>
+113      <address>
+114        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+115        San Francisco<br />
+116        California<br />
+117        USA
+118      </address>
+119    </footer>
+120  </body>
+121 </html>
